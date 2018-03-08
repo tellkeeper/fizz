@@ -20,8 +20,8 @@ class fbUnit(unittest.TestCase):
         self.assertEqual(fizz(5), "Buzz")
         self.assertEqual(fizz(15), "FizzBuzz")
         self.assertEqual(fizz(100), "Bam!")
-        self.assertEqual(fizz(1), 1)
-        self.assertEqual(fizz(4), 4)
+        self.assertEqual(fizz(23), 23)
+        self.assertEqual(fizz(91), 91)
 
 
 print "\n".join(fb(n) for n in xrange(1, 101))
