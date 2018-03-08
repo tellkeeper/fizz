@@ -16,12 +16,12 @@ def fb(i):
 class fbUnit(unittest.TestCase):
 
     def fbUnit(self):
-        self.assertEqual(fizz(3), "Fizz")
-        self.assertEqual(fizz(5), "Buzz")
-        self.assertEqual(fizz(15), "FizzBuzz")
-        self.assertEqual(fizz(100), "Bam!")
-        self.assertEqual(fizz(23), 23)
-        self.assertEqual(fizz(91), 91)
+        self.assertEqual(fb(3), "Fizz")
+        self.assertEqual(fb(5), "Buzz")
+        self.assertEqual(fb(15), "FizzBuzz")
+        self.assertEqual(fb(100), "Bam!")
+        self.assertEqual(fb(23), 23)
+        self.assertEqual(fb(91), 91)
 
 
 print "\n".join(fb(n) for n in xrange(1, 101))
